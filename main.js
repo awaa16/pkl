@@ -26,7 +26,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export async function ambildaftarmember() {
-  const refDokumen = collection(db, "datamember");
+  const refDokumen = collection(db, "Pkl");
   const kueri = query(refDokumen, orderBy("nama"));
   const cuplikanKueri = await getDocs(kueri);
 
