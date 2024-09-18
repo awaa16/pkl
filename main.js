@@ -47,7 +47,7 @@ export function formatAngka(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 
-export async function tambahmeber(nama, alamat, nohp) {
+export async function tambahmember(nama, alamat, nohp) {
   try {
     const dokRef = await addDoc(collection(db, 'laundry'), {
 
