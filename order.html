@@ -20,33 +20,33 @@
       <input type="text" class="form-control" id="input-nama">
     </div>
     <div class="mb-3">
-      <label class="form-label">Alamat  </label>
+      <label class="form-label">Alamat </label>
       <input type="text" class="form-control" id="input-alamat">
-      
-          </div>
+
+    </div>
     <div class="mb-3">
       <label class="form-label">No Handpone </label>
       <input type="text" class="form-control" id="input-nohp">
     </div>
 
-   <button type="submit" class="btn btn-primary" id="tombolTambah">Simpan</button>
+    <button type="submit" class="btn btn-primary" id="tombolTambah">Simpan</button>
   </form>
 
-  <a href="index.html">Lihat daftar member </a>
+  <a href="index.html"> Menu tampilan awal</a>
 
   <script type="module">
     import { tambahmember } from './main.js';
 
     let elemennama = document.getElementById('input-namamember');
-    let elemenalamat= document.getElementById('input-alamatmember');
+    let elemenalamat = document.getElementById('input-alamatmember');
     let elemennohp = document.getElementById('input-nohp');
-    
+
 
     tombolTambah.addEventListener('click', async function(e) {
       e.preventDefault();
 
 
-      await tambahmember(elemennama.value, elemenalamat.value, elemennohp.value,);
+      await tambahmember(elemennama.value, elemenalamat.value, elemennohp.value, );
 
       window.location.href = 'index.html';
 
